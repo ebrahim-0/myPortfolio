@@ -1,0 +1,7 @@
+@import "./Colors";
+
+.contact-link {
+  &:hover {
+    color: $activeColor;
+  }
+}

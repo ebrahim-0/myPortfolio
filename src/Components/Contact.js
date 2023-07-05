@@ -3,6 +3,8 @@ import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsWhatsapp } from "react-icons/bs";
+import "./scss/Contact.scss";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -13,51 +15,51 @@ export default function Contact() {
       <h1 className="font-bold text-4xl md:text-6xl title text-center">
         Contact US
       </h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 p-16  transition-all duration-400">
-        <a
-          href="https://github.com/ebrahim-0"
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 p-16">
+        <Link
+          to="https://github.com/ebrahim-0"
           target="_blank"
-          className="w-fit links flex gap-6 transition-all duration-400 hover:underline items-center"
+          className="w-fit contact-link flex gap-6 hover:underline items-center "
           data-aos="zoom-out-up"
         >
-          <AiFillGithub />
-          Github
-        </a>
-        <a
+          <AiFillGithub className="transition-all duration-300" />
+          <span className="transition-all duration-300">Github</span>
+        </Link>
+        <Link
           href="https://www.linkedin.com/in/ebrahim-abdelrazik2020/"
           target="_blank"
-          className="w-fit links flex gap-6 transition-all duration-400 hover:underline items-center"
+          className="w-fit contact-link flex gap-6 hover:underline items-center "
           data-aos="zoom-out-up"
         >
-          <BsLinkedin />
-          LinkedIn
-        </a>
-        <a
+          <BsLinkedin className="transition-all duration-300" />
+          <span className="transition-all duration-300">LinkedIn</span>
+        </Link>
+        <Link
           href="https://www.facebook.com/ebrahimabdelrazik0"
           target="_blank"
-          className="w-fit links flex gap-6 transition-all duration-400 hover:underline items-center"
+          className="w-fit contact-link flex gap-6 hover:underline items-center "
           data-aos="zoom-out-up"
         >
-          <BsFacebook />
-          Facebook
-        </a>
-        <a
+          <BsFacebook className="transition-all duration-300" />
+          <span className="transition-all duration-300">Facebook</span>
+        </Link>
+        <Link
           href="mailto:ebrahimabdelrazik2002@gmail.com"
-          className="w-fit links flex gap-6 transition-all duration-400 hover:underline items-center"
+          className="w-fit contact-link flex gap-6 hover:underline items-center "
           data-aos="zoom-out-up"
         >
-          <HiOutlineMail />
-          Email
-        </a>
-        <a
+          <HiOutlineMail className="transition-all duration-300" />
+          <span className="transition-all duration-300">Email</span>
+        </Link>
+        <Link
           href="https://wa.me/201032868845"
           target="_blank"
-          className="w-fit links flex gap-6 transition-all duration-400 hover:underline items-center"
+          className="w-fit contact-link flex gap-6 hover:underline items-center "
           data-aos="zoom-out-up"
         >
-          <BsWhatsapp />
-          Whatsapp
-        </a>
+          <BsWhatsapp className="transition-all duration-300" />
+          <span className="transition-all duration-300">Whatsapp</span>
+        </Link>
       </div>
     </div>
   );

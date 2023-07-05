@@ -28,7 +28,7 @@ export default function NavBar() {
               smooth
               offset={-50}
               duration={500}
-              className="p-3 md:px-3 links transition-all  duration-500 cursor-pointer capitalize"
+              className="p-3 md:px-3 links transition-all duration-500 cursor-pointer capitalize"
             >
               {link}
             </Link>
