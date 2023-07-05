@@ -16,7 +16,7 @@ export default function Skills() {
       id="skills"
       className="container mx-auto md:w-5/6 text-gray-200 text-xl md:text-5xl projects py-20 mt-7"
     >
-      <h1 className="font-bold text-center title">My Skills</h1>
+      <h1 className="font-bold text-center text-6xl title">My Skills</h1>
       <div className="skills">
         <div className="mt-11 p-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 skills ">
           <div
