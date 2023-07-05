@@ -1,0 +1,23 @@
+@import "./Components/scss/Colors";
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(225 225 225);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $activeColor;
+  transition: 1s;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fca800;
+}

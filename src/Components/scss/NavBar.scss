@@ -1,0 +1,10 @@
+@import "./Colors";
+
+.links {
+  &:hover {
+    color: $activeColor;
+  }
+  &.active {
+    color: $activeColor;
+  }
+}

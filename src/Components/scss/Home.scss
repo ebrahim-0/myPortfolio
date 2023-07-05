@@ -1,0 +1,17 @@
+@import "./Colors";
+
+.home {
+  min-height: calc(100vh - 117px);
+}
+
+.color {
+  color: $activeColor;
+}
+
+.button {
+  background-color: $activeColor;
+  &:hover {
+    background-color: transparent;
+    outline: 2px solid $activeColor;
+  }
+}
