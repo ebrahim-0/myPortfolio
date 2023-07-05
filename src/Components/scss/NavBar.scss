@@ -6,5 +6,39 @@
   }
   &.active {
     color: $activeColor;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $activeColor;
+      transition: 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.navbar {
+  .links {
+    position: relative;
+    width: fit-content;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $activeColor;
+      transition: 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 }

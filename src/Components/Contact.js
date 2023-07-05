@@ -8,14 +8,14 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="container mx-auto md:w-5/6 text-gray-200  text-xl md:text-4xl projects py-24 mt-7 px-10"
+      className="container mx-auto md:w-5/6 text-gray-200  text-xl md:text-4xl projects py-24 mt-7 "
     >
-      <h1 className="text-center py-16">Contact With Me</h1>
-      <div className="flex flex-col gap-10 transition-all duration-400">
+      <h1 className="font-bold text-6xl title text-center">Contact With Me</h1>
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 p-16  transition-all duration-400">
         <a
           href="https://github.com/ebrahim-0"
           target="_blank"
-          className="w-fit links flex gap-10 transition-all duration-400"
+          className="w-fit links flex gap-10 transition-all duration-400 hover:underline"
         >
           <AiFillGithub />
           Github
@@ -23,7 +23,7 @@ export default function Contact() {
         <a
           href="https://www.linkedin.com/in/ebrahim-abdelrazik2020/"
           target="_blank"
-          className="w-fit links flex gap-10 transition-all duration-400"
+          className="w-fit links flex gap-10 transition-all duration-400 hover:underline"
         >
           <BsLinkedin />
           LinkedIn
@@ -31,14 +31,14 @@ export default function Contact() {
         <a
           href="https://www.facebook.com/ebrahimabdelrazik0"
           target="_blank"
-          className="w-fit links flex gap-10 transition-all duration-400"
+          className="w-fit links flex gap-10 transition-all duration-400 hover:underline"
         >
           <BsFacebook />
           Facebook
         </a>
         <a
           href="mailto:ebrahimabdelrazik2002@gmail.com"
-          className="w-fit links flex gap-10 transition-all duration-400"
+          className="w-fit links flex gap-10 transition-all duration-400 hover:underline"
         >
           <HiOutlineMail />
           Email
@@ -46,7 +46,7 @@ export default function Contact() {
         <a
           href="https://wa.me/201032868845"
           target="_blank"
-          className="w-fit links flex gap-10 transition-all duration-400"
+          className="w-fit links flex gap-10 transition-all duration-400 hover:underline"
         >
           <BsWhatsapp />
           Whatsapp

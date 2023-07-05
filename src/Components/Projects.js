@@ -8,9 +8,12 @@ export default function Projects() {
       id="projects"
       className="container mx-auto md:w-5/6 text-gray-200 text-xl md:text-5xl projects py-24 mt-7 "
     >
-      <h1 className="font-bold text-6xl text-center">My Projects</h1>
+      <h1 className="font-bold text-6xl text-center title">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center p-4">
-        <div className="card flex items-center gap-8  mt-8 p-5 text-xl">
+        <div
+          className="card flex items-center gap-8  mt-8 p-5 text-xl"
+          data-aos="fade-up-right"
+        >
           <img src={movieIcon} className="w-28 h-28 " alt="" />
 
           <div>
@@ -24,7 +27,10 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="card flex items-center gap-8  mt-8 p-5 text-xl">
+        <div
+          className="card flex items-center gap-8  mt-8 p-5 text-xl"
+          data-aos="zoom-in-up"
+        >
           <img src={weatherIcon} className="w-28 h-28 " alt="" />
 
           <div>
@@ -38,7 +44,10 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="card flex items-center gap-8  mt-8 p-5 text-xl">
+        <div
+          className="card flex items-center gap-8  mt-8 p-5 text-xl"
+          data-aos="fade-up-left"
+        >
           <img src={quizIcon} className="w-28 h-28 " alt="" />
 
           <div>
