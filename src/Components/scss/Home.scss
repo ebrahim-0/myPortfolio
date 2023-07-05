@@ -12,6 +12,6 @@
   background-color: $activeColor;
   &:hover {
     background-color: transparent;
-    outline: 2px solid $activeColor;
+    border: 1px solid $activeColor;
   }
 }
