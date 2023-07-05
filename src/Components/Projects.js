@@ -46,7 +46,7 @@ export default function Projects() {
         </div>
         <div
           className="card flex items-center gap-8  mt-8 p-5 text-xl"
-          data-aos="fade-up-left"
+          data-aos="fade-up-right"
         >
           <img src={quizIcon} className="w-28 h-28 " alt="" />
 
