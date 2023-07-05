@@ -19,6 +19,7 @@ export default function NavBar() {
           activeClass="active"
           spy={true}
           smooth
+          onClick={handleClick}
           offset={-75}
           duration={500}
           className="p-3 md:px-3 links transition-all  duration-500 cursor-pointer"
@@ -30,6 +31,7 @@ export default function NavBar() {
           activeClass="active"
           spy={true}
           smooth
+          onClick={handleClick}
           offset={-150}
           duration={500}
           className="p-3 md:px-3  links transition-all  duration-500 cursor-pointer"
@@ -41,6 +43,7 @@ export default function NavBar() {
           activeClass="active"
           spy={true}
           smooth
+          onClick={handleClick}
           offset={-150}
           duration={500}
           className="p-3 md:px-3  links transition-all  duration-500 cursor-pointer"
@@ -52,6 +55,7 @@ export default function NavBar() {
           activeClass="active"
           spy={true}
           smooth
+          onClick={handleClick}
           offset={-150}
           duration={500}
           className="p-3 md:px-3  links transition-all  duration-500 cursor-pointer"
