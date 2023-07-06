@@ -20,7 +20,7 @@ function App() {
     <div className="bg-black">
       <NavBar />
       <Home />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Skills />
       <Contact />
