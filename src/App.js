@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -12,20 +12,36 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function App() {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") === "black" ? "black" : "light"
+  );
   useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    setTheme(localTheme);
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+
     AOS.init();
-  }, []);
+  }, [theme]);
+
+  const handleMode = (e) => {
+    if (e.target.checked) {
+      setTheme("black");
+    } else {
+      setTheme("light");
+    }
+  };
 
   return (
-    <div className="bg-black">
-      <NavBar />
-      <Home />
-      {/* <About /> */}
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <NavBar theme={theme} handleMode={handleMode} />
+      <Home theme={theme} />
+      <About theme={theme} />
+      <Projects theme={theme} />
+      <Skills theme={theme} />
+      <Contact theme={theme} />
+      <Footer theme={theme} />
+    </>
   );
 }
 

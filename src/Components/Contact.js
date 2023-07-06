@@ -6,11 +6,13 @@ import { BsWhatsapp } from "react-icons/bs";
 import "./scss/Contact.scss";
 import { Link } from "react-router-dom";
 
-export default function Contact() {
+export default function Contact({ theme }) {
   return (
     <div
       id="contact"
-      className="container mx-auto md:w-5/6 text-gray-200  text-xl md:text-4xl projects py-24 mt-7 "
+      className={`container mx-auto md:w-5/6 ${
+        theme === "black" ? "text-gray-200" : "text-black"
+      } text-xl md:text-4xl projects py-24 mt-7 `}
     >
       <h1 className="font-bold text-4xl md:text-6xl title text-center">
         Contact US

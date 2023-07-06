@@ -4,11 +4,13 @@ import quizIcon from "./Image/quizIcon.png";
 import { Link } from "react-router-dom";
 import { AiFillGithub } from "react-icons/ai";
 
-export default function Projects() {
+export default function Projects({ theme }) {
   return (
     <div
       id="projects"
-      className="container mx-auto md:w-5/6 text-gray-200 text-xl md:text-5xl projects py-24 mt-7 "
+      className={`container mx-auto md:w-5/6 ${
+        theme === "black" ? "text-gray-200" : "text-black"
+      } text-xl md:text-5xl projects py-24 mt-7 `}
     >
       <h1 className="font-bold text-4xl md:text-6xl text-center title">
         My Projects
