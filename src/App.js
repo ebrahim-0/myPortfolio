@@ -13,13 +13,15 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function App() {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") === "black" ? "black" : "light"
+    localStorage.getItem("theme") === "light" ? "light" : "black"
   );
   useEffect(() => {
     localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
-    setTheme(localTheme);
-    document.querySelector("html").setAttribute("data-theme", localTheme);
+
+    setTheme(localStorage.getItem("theme"));
+    document
+      .querySelector("html")
+      .setAttribute("data-theme", localStorage.getItem("theme"));
 
     AOS.init();
   }, [theme]);
