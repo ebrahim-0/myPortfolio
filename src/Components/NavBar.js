@@ -113,7 +113,9 @@ export default function NavBar({ theme, handleMode }) {
         <nav
           className={
             nav
-              ? "absolute top-0 left-0 w-full h-screen bg-gray-900 opacity-95 flex flex-col justify-center items-center"
+              ? `absolute top-0 left-0 w-full h-screen ${
+                  theme === "black" ? "bg-gray-900" : "bg-gray-300"
+                }  opacity-95 flex flex-col justify-center items-center`
               : "hidden"
           }
         >
