@@ -20,7 +20,7 @@ export default function Home({ theme }) {
         <span className="color font-bold">Front-End </span>Developer
       </p>
       <a
-        href="https://drive.google.com/u/0/uc?id=1rHa77y0lQD8FF5QcExSU3q9N-GygiQhF&export=download"
+        href="https://drive.google.com/u/0/uc?id=1GsdEYnpaFN56MVoXjD1j7GS8yS428uC_&export=download"
         className="py-3 px-4 rounded-xl text-xs md:text-lg transition-all duration-300 hover:underline button"
       >
         Download My CV
